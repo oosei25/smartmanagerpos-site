@@ -1,23 +1,170 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>SmartManager POS — Coming Soon</title>
-    <style>
-      body { font-family: system-ui, Arial, sans-serif; margin: 0; padding: 40px; }
-      .card { max-width: 720px; margin: 0 auto; border: 1px solid #e5e7eb; border-radius: 14px; padding: 28px; }
-      .tag { display: inline-block; padding: 6px 10px; border-radius: 999px; background: #e6fffb; color: #0f766e; font-weight: 600; }
-      h1 { margin: 14px 0 8px; }
-      p { color: #374151; line-height: 1.5; }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SmartManager POS | Coming Soon</title>
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#071218" />
+    <meta
+      name="description"
+      content="SmartManager POS is a fast, offline-first POS for shops in Ghana with inventory, receipts, staff controls, and sales reports."
+    />
+    <meta property="og:title" content="SmartManager POS | Coming Soon" />
+    <meta
+      property="og:description"
+      content="Fast, offline-first POS for shops in Ghana: inventory, receipts, staff, and reports."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/" />
+    <meta property="og:image" content="img/sm_icon_1024.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SmartManager POS | Coming Soon" />
+    <meta
+      name="twitter:description"
+      content="Fast, offline-first POS for shops in Ghana. Join the waitlist."
+    />
+    <meta name="twitter:image" content="img/sm_icon_1024.png" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/app.js" defer></script>
   </head>
   <body>
-    <div class="card">
-      <div class="tag">Coming soon</div>
-      <h1>SmartManager POS</h1>
-      <p>Modern POS for retail shops — inventory, sales, receipts, staff, backups, and offline-first workflows.</p>
-      <p><strong>WhatsApp:</strong> +233 208 808 318</p>
+    <div class="site-shell">
+      <header class="site-header" id="top" role="banner">
+        <a class="brand" href="#top" aria-label="SmartManager POS home">SmartManager POS</a>
+        <nav class="top-nav" aria-label="Primary">
+          <a href="#features">Features</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main id="main-content">
+        <section class="hero card" aria-labelledby="hero-title">
+          <p class="eyebrow">Coming soon</p>
+          <p class="pill">Offline-first</p>
+          <h1 id="hero-title">SmartManager POS</h1>
+          <p class="subheadline">
+            Fast, offline-first POS for shops in Ghana - inventory, receipts, staff, reports.
+          </p>
+          <div class="cta-row">
+            <a
+              class="btn btn-primary"
+              href="#waitlist"
+              data-scroll-target="waitlist"
+              aria-label="Jump to waitlist section"
+            >
+              Join the waitlist
+            </a>
+            <a
+              class="btn btn-secondary"
+              href="https://wa.me/233208808318?text=Hi%20SmartManager%20POS%2C%20please%20add%20me%20to%20the%20waitlist."
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Chat with SmartManager POS on WhatsApp"
+            >
+              WhatsApp us
+            </a>
+          </div>
+        </section>
+
+        <section class="card section" id="features" aria-labelledby="features-title">
+          <h2 id="features-title">What you get</h2>
+          <ul class="features-grid">
+            <li class="feature-card">
+              <h3>Inventory</h3>
+              <p>Track stock levels and low items in real time.</p>
+            </li>
+            <li class="feature-card">
+              <h3>Barcode scanning</h3>
+              <p>Scan and sell quickly with fewer entry mistakes.</p>
+            </li>
+            <li class="feature-card">
+              <h3>Receipt printing</h3>
+              <p>Print clean receipts for each transaction.</p>
+            </li>
+            <li class="feature-card">
+              <h3>Staff roles</h3>
+              <p>Set clear permissions by employee role.</p>
+            </li>
+            <li class="feature-card">
+              <h3>Sales reports</h3>
+              <p>View daily totals, trends, and top products.</p>
+            </li>
+            <li class="feature-card">
+              <h3>Device seat control</h3>
+              <p>Control who uses each register seat and device.</p>
+            </li>
+          </ul>
+          <aside class="sync-callout" aria-label="Offline sync emphasis">
+            <h3>Works offline and syncs later</h3>
+            <p>Keep selling during network downtime. Transactions sync automatically once internet returns.</p>
+          </aside>
+        </section>
+
+        <section class="card section" id="waitlist" aria-labelledby="waitlist-title">
+          <h2 id="waitlist-title">Get notified</h2>
+          <form id="waitlist-form" class="waitlist-form" aria-label="Waitlist email form" novalidate>
+            <label for="email">Business email</label>
+            <div class="form-row">
+              <input
+                id="email"
+                name="email"
+                type="email"
+                inputmode="email"
+                placeholder="you@shop.com"
+                autocomplete="email"
+                required
+                aria-required="true"
+                aria-describedby="email-error"
+              />
+              <button type="submit" class="btn btn-primary" aria-label="Submit waitlist email">
+                Join the waitlist
+              </button>
+            </div>
+            <p id="email-error" class="error-text" role="alert"></p>
+            <p class="form-note">Front-end only for now. Submission is simulated on this page.</p>
+            <p class="status-text" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </section>
+
+        <section class="card section" id="contact" aria-labelledby="contact-title">
+          <h2 id="contact-title">Contact</h2>
+          <div class="contact-actions">
+            <a
+              class="btn btn-secondary"
+              href="https://wa.me/233208808318?text=Hi%20SmartManager%20POS%2C%20I%20want%20to%20learn%20more."
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open WhatsApp chat with SmartManager POS"
+            >
+              WhatsApp us
+            </a>
+            <p>
+              WhatsApp:
+              <span>+233 20 880 8318</span>
+              <button
+                class="copy-btn"
+                type="button"
+                data-copy="+233208808318"
+                aria-label="Copy WhatsApp number"
+              >
+                Copy
+              </button>
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <span>&copy; <span id="year"></span> SmartManager POS</span>
+        <span>Coming soon</span>
+      </footer>
     </div>
+
+    <div id="copy-toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
   </body>
 </html>
