@@ -258,6 +258,35 @@ p {
   background: linear-gradient(175deg, rgba(20, 50, 69, 0.92), rgba(14, 36, 51, 0.95));
 }
 
+.feature-title {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.feature-icon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.65rem;
+  border: 1px solid rgba(140, 249, 232, 0.3);
+  background: rgba(49, 224, 201, 0.08);
+  color: var(--sm-teal-300);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.feature-icon svg {
+  width: 1.08rem;
+  height: 1.08rem;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .feature-card p {
   margin-top: 0.4rem;
   color: var(--text-300);
