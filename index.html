@@ -3,30 +3,32 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SmartManager POS | Coming Soon</title>
+    <title>SmartManager POS | LAN-First POS for Shops</title>
     <link rel="icon" href="favicon.ico" sizes="any" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="manifest" href="site.webmanifest" />
-    <meta name="theme-color" content="#071218" />
+    <meta name="theme-color" content="#111827" />
     <meta
       name="description"
-      content="SmartManager POS is a fast, offline-first POS for shops in Ghana with inventory, receipts, staff controls, and sales reports."
+      content="SmartManager POS is a LAN-first POS for shops, with a desktop app, store server, inventory, receipts, restaurant tools, reports, and remote manager access via VPN."
     />
-    <meta property="og:title" content="SmartManager POS | Coming Soon" />
+    <meta property="og:title" content="SmartManager POS | Desktop App Live, Online Store Coming Soon" />
     <meta
       property="og:description"
-      content="Fast, offline-first POS for shops in Ghana: inventory, receipts, staff, and reports."
+      content="LAN-first POS for shops with an Electron desktop app, store server, owner recovery, messaging workflows, and manager access over VPN."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="/" />
-    <meta property="og:image" content="img/sm_icon_1024.png" />
+    <meta property="og:url" content="https://smartmanagerpos.com/" />
+    <meta property="og:image" content="https://smartmanagerpos.com/img/sm_icon_1024.png" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="SmartManager POS | Coming Soon" />
+    <meta name="twitter:title" content="SmartManager POS | Desktop App Live, Online Store Coming Soon" />
+    <meta name="twitter:image" content="https://smartmanagerpos.com/img/sm_icon_1024.png" />
+    <link rel="canonical" href="https://smartmanagerpos.com/" />
     <meta
       name="twitter:description"
-      content="Fast, offline-first POS for shops in Ghana. Join the waitlist."
+      content="Electron desktop app is available now. Online store coming soon."
     />
     <meta name="twitter:image" content="img/sm_icon_1024.png" />
     <link rel="stylesheet" href="assets/styles.css" />
@@ -35,7 +37,10 @@
   <body>
     <div class="site-shell">
       <header class="site-header" id="top" role="banner">
-        <a class="brand" href="#top" aria-label="SmartManager POS home">SmartManager POS</a>
+        <div class="brand-wrap">
+          <a class="brand" href="#top" aria-label="SmartManager POS home">SmartManager POS</a>
+          <span class="brand-meta">Electron desktop app</span>
+        </div>
         <nav class="top-nav" aria-label="Primary">
           <a href="#features">Features</a>
           <a href="#contact">Contact</a>
@@ -44,24 +49,33 @@
 
       <main id="main-content">
         <section class="hero card" aria-labelledby="hero-title">
-          <p class="eyebrow">Coming soon</p>
-          <p class="pill">Offline-first</p>
+          <p class="eyebrow">Current build available now</p>
+          <p class="pill">Online store coming soon</p>
           <h1 id="hero-title">SmartManager POS</h1>
           <p class="subheadline">
-            Fast, offline-first POS for shops in Ghana - inventory, receipts, staff, reports.
+            SmartManager includes a desktop app, store server, LAN cashier support, VPN-based manager access, owner recovery, and reporting.
+          </p>
+          <ul class="hero-status" aria-label="Current SmartManager availability">
+            <li>Desktop app for Windows, macOS, and Linux</li>
+            <li>Store server and client setup</li>
+            <li>Remote manager access via VPN</li>
+            <li>Owner recovery on server computer</li>
+          </ul>
+          <p class="hero-note">
+            The current build includes receipts, inventory, restaurant workflows, reports, messaging templates, and campaign outbox tools. Online store and web ordering are coming soon.
           </p>
           <div class="cta-row">
             <a
               class="btn btn-primary"
               href="#waitlist"
               data-scroll-target="waitlist"
-              aria-label="Jump to waitlist section"
+              aria-label="Jump to online store updates section"
             >
-              Join the waitlist
+              Get online store updates
             </a>
             <a
               class="btn btn-secondary"
-              href="https://wa.me/233208808318?text=Hi%20SmartManager%20POS%2C%20please%20add%20me%20to%20the%20waitlist."
+              href="https://wa.me/233208808318?text=Hi%20SmartManager%20POS%2C%20I%20want%20to%20learn%20more%20about%20the%20current%20server%20and%20client%20setup."
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Chat with SmartManager POS on WhatsApp"
@@ -72,7 +86,10 @@
         </section>
 
         <section class="card section" id="features" aria-labelledby="features-title">
-          <h2 id="features-title">What you get</h2>
+          <h2 id="features-title">Current app capabilities</h2>
+          <p class="section-intro">
+            SmartManager currently supports a LAN-first server and client setup, plus owner recovery, messaging workflows, restaurant tools, and reporting.
+          </p>
           <ul class="features-grid">
             <li class="feature-card">
               <h3 class="feature-title">
@@ -83,9 +100,9 @@
                     <path d="M10 14h4"></path>
                   </svg>
                 </span>
-                Inventory
+                Store Server Setup
               </h3>
-              <p>Track stock levels and low items in real time.</p>
+              <p>Run the store server on the main store machine with LAN access and VPN support for managers.</p>
             </li>
             <li class="feature-card">
               <h3 class="feature-title">
@@ -99,9 +116,9 @@
                     <path d="M20 6v12"></path>
                   </svg>
                 </span>
-                Barcode Scanning
+                Electron Desktop App
               </h3>
-              <p>Scan and sell quickly with fewer entry mistakes.</p>
+              <p>Use the desktop client on Windows, macOS, or Linux and connect it to your store server over LAN or VPN.</p>
             </li>
             <li class="feature-card">
               <h3 class="feature-title">
@@ -112,9 +129,9 @@
                     <path d="M9 12h6"></path>
                   </svg>
                 </span>
-                Receipt Printing
+                Remote Manager Access
               </h3>
-              <p>Print clean receipts for each transaction.</p>
+              <p>Owners and managers can connect over VPN, while cashiers remain limited to the store network.</p>
             </li>
             <li class="feature-card">
               <h3 class="feature-title">
@@ -126,9 +143,9 @@
                     <path d="M14 18c.2-1.8 1.7-3.2 3.5-3.2 1.9 0 3.5 1.6 3.5 3.5"></path>
                   </svg>
                 </span>
-                Staff Roles
+                POS, Inventory, and Receipts
               </h3>
-              <p>Set clear permissions by employee role.</p>
+              <p>Run sales, products, suppliers, customers, stock control, low-stock views, receipts, and daily store operations.</p>
             </li>
             <li class="feature-card">
               <h3 class="feature-title">
@@ -140,9 +157,35 @@
                     <rect x="16" y="5" width="2.8" height="12" rx=".8"></rect>
                   </svg>
                 </span>
-                Sales Reports
+                Messaging and Campaign Outbox
               </h3>
-              <p>View daily totals, trends, and top products.</p>
+              <p>Use the current build’s bulk messaging templates, campaigns, and outbound communication workflows.</p>
+            </li>
+            <li class="feature-card">
+              <h3 class="feature-title">
+                <span class="feature-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false">
+                    <path d="M12 3l7 3v5c0 5.2-3.3 8.8-7 10-3.7-1.2-7-4.8-7-10V6l7-3z"></path>
+                    <path d="m9 12.2 2.1 2.1L15.5 10"></path>
+                  </svg>
+                </span>
+                Owner Recovery and Offline Codes
+              </h3>
+              <p>Recover the owner account on the server computer and regenerate offline recovery codes when needed.</p>
+            </li>
+            <li class="feature-card">
+              <h3 class="feature-title">
+                <span class="feature-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false">
+                    <path d="M4 19h16"></path>
+                    <rect x="6" y="11" width="2.8" height="6" rx=".8"></rect>
+                    <rect x="11" y="8" width="2.8" height="9" rx=".8"></rect>
+                    <rect x="16" y="5" width="2.8" height="12" rx=".8"></rect>
+                  </svg>
+                </span>
+                Licensing, Seats, and Devices
+              </h3>
+              <p>Base licenses, seat entitlements, device-bound login, and server-side device admission are already enforced.</p>
             </li>
             <li class="feature-card">
               <h3 class="feature-title">
@@ -155,57 +198,42 @@
                     <path d="M8.8 14c.8-1 2-1.6 3.2-1.6 1.2 0 2.4.6 3.2 1.6"></path>
                   </svg>
                 </span>
-                Device Seat Control
+                Restaurant, Reports, and Setup
               </h3>
-              <p>Control who uses each register seat and device.</p>
-            </li>
-            <li class="feature-card">
-              <h3 class="feature-title">
-                <span class="feature-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" focusable="false">
-                    <path d="M12 3l7 3v5c0 5.2-3.3 8.8-7 10-3.7-1.2-7-4.8-7-10V6l7-3z"></path>
-                    <path d="m9 12.2 2.1 2.1L15.5 10"></path>
-                  </svg>
-                </span>
-                Secure Payment Processing
-              </h3>
-              <p>Process card and mobile payments safely with trusted, encrypted checkout flows.</p>
-            </li>
-            <li class="feature-card">
-              <h3 class="feature-title">
-                <span class="feature-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" focusable="false">
-                    <path d="M12 20s-6.5-4.2-8.5-8c-1.4-2.5-.5-5.8 2-7.2 2-1.1 4.4-.7 6 1 1.6-1.7 4-2.1 6-1 2.5 1.4 3.4 4.7 2 7.2-2 3.8-8.5 8-8.5 8z"></path>
-                  </svg>
-                </span>
-                Customer Loyalty Programs
-              </h3>
-              <p>Turn one-time buyers into regulars with points, rewards, and personalized offers.</p>
-            </li>
-            <li class="feature-card">
-              <h3 class="feature-title">
-                <span class="feature-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" focusable="false">
-                    <path d="M4 11h4l8-4v10l-8-4H4z"></path>
-                    <path d="M8 12v6a2 2 0 0 0 2 2h1"></path>
-                    <path d="M18 10.5a3 3 0 0 1 0 5"></path>
-                    <path d="M20 8a6 6 0 0 1 0 10"></path>
-                  </svg>
-                </span>
-                Send Bulk SMS, Voice, IVR or USSD Campaigns
-              </h3>
-              <p>Reach customers at scale with promotional and reminder campaigns across every key channel.</p>
+              <p>Manage kitchen tickets, tables, and orders, run POS and restaurant reports, and configure receipts, taxes, staff, and backups.</p>
             </li>
           </ul>
-          <aside class="sync-callout" aria-label="Offline sync emphasis">
-            <h3>Works offline and syncs later</h3>
-            <p>Keep selling during network downtime. Transactions sync automatically once internet returns.</p>
+          <aside class="availability-callout" aria-label="Connection tip">
+            <!-- <p class="availability-label">Tip</p> -->
+            <h3 class="tip-title">
+              <span class="tip-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path d="M9 18h6"></path>
+                  <path d="M10 22h4"></path>
+                  <path d="M12 2a7 7 0 0 0-4 12.7c.6.4 1 1 1.2 1.7l.1.6h5.4l.1-.6c.2-.7.6-1.3 1.2-1.7A7 7 0 0 0 12 2z"></path>
+                </svg>
+              </span>
+              Start with the right connection setup
+            </h3>
+            <p>
+              Keep cashier devices on the store LAN, use VPN only for approved manager access, and
+              run owner recovery on the server computer when needed.
+            </p>
           </aside>
         </section>
 
         <section class="card section" id="waitlist" aria-labelledby="waitlist-title">
-          <h2 id="waitlist-title">Get notified</h2>
-          <form id="waitlist-form" class="waitlist-form" aria-label="Waitlist email form" novalidate>
+          <h2 id="waitlist-title">Get online store updates</h2>
+          <p class="section-intro">
+            Leave your email if you want the first announcement when the online store and web ordering
+            features go live.
+          </p>
+          <form
+            id="waitlist-form"
+            class="waitlist-form"
+            aria-label="Online store updates email form"
+            novalidate
+          >
             <label for="email">Business email</label>
             <div class="form-row">
               <input
@@ -219,12 +247,12 @@
                 aria-required="true"
                 aria-describedby="email-error"
               />
-              <button type="submit" class="btn btn-primary" aria-label="Submit waitlist email">
-                Join the waitlist
+              <button type="submit" class="btn btn-primary" aria-label="Submit online store email">
+                Notify me
               </button>
             </div>
             <p id="email-error" class="error-text" role="alert"></p>
-            <p class="form-note">Front-end only for now. Submission is simulated on this page.</p>
+            <p class="form-note">Static site demo only. Submission is simulated on this page.</p>
             <p class="status-text" id="form-status" role="status" aria-live="polite"></p>
           </form>
         </section>
@@ -258,8 +286,8 @@
       </main>
 
       <footer class="site-footer">
-        <span>&copy; <span id="year"></span> SmartManager POS</span>
-        <span>Coming soon</span>
+        <span>&copy; <span id="year"></span> I-Waves Technologies. All rights reserved.</span>
+        <span>SmartManager POS desktop app is available now. Online store coming soon.</span>
       </footer>
     </div>
 

@@ -105,7 +105,7 @@ waitlistForm.addEventListener("submit", (event) => {
   }
 
   setEmailError("");
-  formStatus.textContent = `Thanks. ${value} has been added to the waitlist.`;
+  formStatus.textContent = `Thanks. ${value} will receive online store and web ordering updates.`;
   waitlistForm.reset();
   emailInput.setAttribute("aria-invalid", "false");
 });
