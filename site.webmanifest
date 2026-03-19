@@ -1,7 +1,7 @@
 {
   "name": "SmartManager POS",
   "short_name": "SmartManager POS",
-  "description": "Fast, offline-first POS for shops in Ghana.",
+  "description": "Fast, offline-first POS for shops and restaurants.",
   "icons": [
     {
       "src": "android-chrome-192x192.png",
