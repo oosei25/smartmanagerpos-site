@@ -293,6 +293,13 @@ p {
   margin-top: 0.75rem;
 }
 
+.download-meta {
+  margin-top: 0.28rem;
+  color: var(--muted);
+  font-size: 0.84rem;
+  font-weight: 500;
+}
+
 .download-card p:last-of-type {
   margin-top: 0.4rem;
   color: #475569;
